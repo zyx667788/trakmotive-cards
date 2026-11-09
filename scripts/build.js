@@ -10,7 +10,7 @@ const DIST_DIR = path.join(ROOT_DIR, 'dist');
 
 // Configurable base URL for production deployment (e.g. Cloudflare Pages or custom domain)
 // Can be overridden via env variable BASE_URL
-const BASE_URL = process.env.BASE_URL || 'https://card.trakmotive.com';
+const BASE_URL = process.env.BASE_URL || 'https://zyx667788.github.io/trakmotive-cards';
 
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) {
@@ -170,9 +170,9 @@ async function build() {
       slug,
       name: card.name,
       title: card.title,
-      url: `/c/${slug}/`,
-      qrSvg: `/qrcodes/${slug}.svg`,
-      qrPng: `/qrcodes/${slug}.png`
+      url: `./c/${slug}/`,
+      qrSvg: `./qrcodes/${slug}.svg`,
+      qrPng: `./qrcodes/${slug}.png`
     });
 
     console.log(`✅ Built card [${slug}] -> ${card.name} (${targetUrl})`);
