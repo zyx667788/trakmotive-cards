@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>{{NAME}} - {{COMPANY}}</title>
+  <meta name="description" content="{{NAME}} - {{TITLE}} | {{COMPANY}}">
+  <meta property="og:title" content="{{NAME}} - {{COMPANY}}">
+  <meta property="og:description" content="{{TITLE}}">
+  <meta property="og:type" content="profile">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="card-container">
+    <!-- Header with Navy Blue Background -->
+    <header class="card-header">
+      <img src="../../assets/logo.svg" alt="{{COMPANY}} Logo" class="company-logo">
+      
+      <div class="avatar-wrapper">
+        {{AVATAR_HTML}}
+      </div>
+
+      <h1 class="person-name">{{NAME}}</h1>
+      <p class="person-title">{{TITLE}}</p>
+      <p class="person-company">{{COMPANY}}</p>
+    </header>
+
+    <!-- 4 Quick Actions (Call, SMS, Email, Location) -->
+    <nav class="quick-actions-bar" aria-label="快捷联系">
+      {{QUICK_ACTIONS_HTML}}
+    </nav>
+
+    <!-- Main Content Details -->
+    <main class="card-body">
+      <section class="details-list">
+        {{DETAILS_HTML}}
+      </section>
+
+      <!-- Bottom Primary Action -->
+      <section class="cta-section">
+        <button class="btn-primary" onclick="openExchangeModal()">
+          <svg viewBox="0 0 24 24">
+            <path d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"/>
+          </svg>
+          Exchange Contacts
+        </button>
+      </section>
+    </main>
+
+    <footer class="card-footer">
+      <p>{{COMPANY}}</p>
+    </footer>
+  </div>
+
+  <!-- Modal Bottom Sheet: Save Contact & Exchange Contact -->
+  <div id="exchangeModal" class="modal-overlay">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h2 class="modal-title">名片交互 (Exchange)</h2>
+        <button class="modal-close" onclick="closeExchangeModal()">&times;</button>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn-save-vcard" onclick="downloadVCard()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L19 11.5l-7 7-7-7 1.41-1.41L11 12.67V3h2v9.67z"/>
+          </svg>
+          一键存入手机通讯录 (Save to Contacts)
+        </button>
+      </div>
+
+      <form class="exchange-form" onsubmit="submitExchangeForm(event)">
+        <p style="font-size: 13px; color: #64748b; margin-bottom: 6px;">留下您的联系方式给 {{NAME}}：</p>
+        <div class="form-group">
+          <label class="form-label">您的姓名 *</label>
+          <input type="text" name="name" class="form-input" required placeholder="如：李先生">
+        </div>
+        <div class="form-group">
+          <label class="form-label">您的手机号 *</label>
+          <input type="tel" name="phone" class="form-input" required placeholder="如：13800000000">
+        </div>
+        <div class="form-group">
+          <label class="form-label">电子邮箱</label>
+          <input type="email" name="email" class="form-input" placeholder="如：contact@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">公司名称 / 职务</label>
+          <input type="text" name="company" class="form-input" placeholder="如：某某汽车配件有限公司">
+        </div>
+        <button type="submit" class="btn-submit-lead">发送我的名片 (Send Contact)</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    window.__CARD_DATA__ = {{CARD_JSON}};
+  </script>
+  <script src="../../card.js"></script>
+</body>
+</html>

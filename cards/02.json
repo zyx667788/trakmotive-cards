@@ -1,0 +1,20 @@
+{
+  "slug": "02",
+  "name": "Keith Gordon",
+  "title": "Commercial Director - Canada",
+  "company": "Advanced Innovative Technology Corp.",
+  "avatar": "",
+  "initials": "KG",
+  "phone": "(905) 552-7100",
+  "phone_label": "Mobile",
+  "email": "kgordon@trakmotive.com",
+  "website": "https://www.trakmotive.com",
+  "address": "5800 Explorer Dr, Mississauga, ON L4W 5K9, Canada",
+  "address_map_url": "https://www.google.com/maps/search/?api=1&query=5800+Explorer+Dr,+Mississauga,+ON+L4W+5K9",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/company/advanced-innovative-technology-corp-/",
+    "facebook": "https://www.facebook.com/trakmotive/",
+    "instagram": "https://www.instagram.com/trakmotive/",
+    "youtube": "https://www.youtube.com/channel/UCC5_3tMd6339eafch0GLMSg"
+  }
+}

@@ -1,0 +1,248 @@
+{
+ "id": 193633,
+ "lead_attribute": {
+  "id": 480432,
+  "phone": true,
+  "designation": true,
+  "notes": false,
+  "company": true,
+  "connection": 2
+ },
+ "lead_user_agreement_attribute": {
+  "id": 249765,
+  "user_agreement_urls": []
+ },
+ "meta": {
+  "dbc_count": 37,
+  "creator_id": 190500,
+  "updater_id": 190500,
+  "creator_email": "aghyst@trakmotive.com",
+  "updater_email": "mroach@trakmotive.com",
+  "organization_template_id": 35315,
+  "is_ad_integration_template": false,
+  "created_via_ad": false
+ },
+ "url": "https://smartcards.pro/0AElyg",
+ "card_owner": {
+  "id": 190500,
+  "email": "mroach@trakmotive.com",
+  "earned": null
+ },
+ "domain": 0,
+ "tags_data": [],
+ "deleted": null,
+ "first_name": "Mark",
+ "last_name": "Roach",
+ "address_line1": "",
+ "address_line2": "",
+ "address_url": "https://www.google.com/maps/search/?api=1&query=34.0589868,-117.2120294&query_place_id=ChIJmctgUw2r3IARdEqVs2oGaM8",
+ "city": "",
+ "zip": "",
+ "address_state": "",
+ "country": "",
+ "website": "",
+ "company": "Advanced Innovative Technology Corp.",
+ "summary": "",
+ "logo_url": "https://cdn.uniqode.com/189912/aa68b13dd6dd416d82dd605ccf8a3f85?v=1794210759.987617",
+ "designation": "Marketing Director",
+ "customizations": {
+  "background": {
+   "type": "color",
+   "value": "#ffffff"
+  },
+  "font_style": "Karla",
+  "icon_color": "#c8102e",
+  "typography": {
+   "bio": {
+    "google_font_size": 18,
+    "google_font_style": "Regular",
+    "google_font_colour": "#000000"
+   },
+   "button": {
+    "google_font_size": 20,
+    "google_font_style": "Semi Bold",
+    "google_font_colour": "#ffffff"
+   },
+   "font_type": "google",
+   "font_family": "Open Sans",
+   "personal_info": {
+    "google_font_size": 30,
+    "google_font_style": "Semi Bold",
+    "google_font_colour": "#ffffff"
+   },
+   "company_details": {
+    "google_font_size": 16,
+    "google_font_style": "Regular",
+    "google_font_colour": "#ffffff"
+   },
+   "contact_details": {
+    "google_font_size": 16,
+    "google_font_style": "Regular",
+    "google_font_colour": "#000000"
+   }
+  },
+  "button_color": "#0067b9",
+  "secondary_color": "#000000",
+  "title_font_size": 30,
+  "user_info_color": "#ffffff",
+  "background_color": "#002855"
+ },
+ "user_image_url": "",
+ "phone": {
+  "home": "",
+  "work": "",
+  "mobile": ""
+ },
+ "email": "",
+ "social_links": {
+  "yelp": null,
+  "venmo": null,
+  "vimeo": null,
+  "github": null,
+  "paypal": null,
+  "tiktok": null,
+  "twitch": null,
+  "wistia": null,
+  "behance": null,
+  "cashapp": null,
+  "discord": null,
+  "shopify": null,
+  "twitter": "",
+  "youtube": "https://www.youtube.com/channel/UCC5_3tMd6339eafch0GLMSg",
+  "calendly": null,
+  "dribbble": null,
+  "facebook": "https://www.facebook.com/trakmotive/",
+  "linkedin": "https://www.linkedin.com/company/advanced-innovative-technology-corp-/",
+  "snapchat": null,
+  "telegram": null,
+  "whatsapp": null,
+  "instagram": "https://www.instagram.com/trakmotive/",
+  "pinterest": null,
+  "custom_url": null
+ },
+ "phone_v2": [
+  {
+   "label": "Mobile",
+   "valid": "valid",
+   "value": "(440) 552-7002"
+  }
+ ],
+ "email_v2": [
+  {
+   "label": "",
+   "valid": "valid",
+   "value": "mroach@trakmotive.com"
+  }
+ ],
+ "address_v2": "1675 W Park Ave, Redlands, CA 92373, USA",
+ "website_v2": [
+  {
+   "label": "",
+   "valid": "valid",
+   "value": "https://www.trakmotive.com"
+  }
+ ],
+ "pronouns_v2": "",
+ "autodownload_v2": false,
+ "layout": "3",
+ "custom_fields": [],
+ "prefix": "",
+ "suffix": "",
+ "department": "",
+ "branding_footer": true,
+ "template": {
+  "id": 9326275,
+  "meta": {
+   "creator_id": 190500,
+   "updater_id": 190500,
+   "creator_email": "aghyst@trakmotive.com",
+   "updater_email": "aghyst@trakmotive.com"
+  },
+  "name": "New Template - 3/4/2025 - copy",
+  "scope": 3,
+  "default": false,
+  "colorDark": "#000000",
+  "frameText": "SCAN ME",
+  "logoImage": "",
+  "logoScale": 0.27,
+  "colorLight": "#8f00ff",
+  "frameColor": "#000000",
+  "frameStyle": "none",
+  "logoMargin": 22,
+  "maintainer": null,
+  "dataPattern": "smooth-round",
+  "eyeBallColor": "#0067b9",
+  "eyeBallShape": "square",
+  "gradientType": "none",
+  "organization": 189912,
+  "thumbnailUrl": "https://beaconstac-content.s3.amazonaws.com/189912/qr-codes/9326275/svg/aHR0cHM6Ly91bmlxby5kZS9zY2FuL3A/dGVtcGxhdGU9dHJ1ZQ%3D%3D-512.svg",
+  "eyeFrameColor": "#0067b9",
+  "eyeFrameShape": "square",
+  "frameTextColor": "#ffffff",
+  "logoBackground": true,
+  "qr_codes_count": 0,
+  "backgroundColor": "#ffffff",
+  "backgroundImage": ""
+ },
+ "name_in_lead_consent": "card_owner_name",
+ "logo_size": 50,
+ "created": "2025-03-04T19:18:55.085379+05:30",
+ "updated": "2026-09-16T22:13:32.592650+05:30",
+ "location_enabled": true,
+ "ip_location_enabled": true,
+ "lead_collection": true,
+ "lead_user_agreement": true,
+ "social_links_ordering": {
+  "0": "facebook",
+  "1": "instagram",
+  "2": "twitter",
+  "3": "linkedin",
+  "4": "tiktok",
+  "5": "snapchat",
+  "6": "whatsapp",
+  "7": "telegram",
+  "8": "vimeo",
+  "9": "youtube",
+  "10": "wistia",
+  "11": "twitch",
+  "12": "discord",
+  "13": "pinterest",
+  "14": "yelp",
+  "15": "paypal",
+  "16": "venmo",
+  "17": "cashapp",
+  "18": "calendly",
+  "19": "shopify",
+  "20": "github",
+  "21": "dribbble",
+  "22": "behance",
+  "23": "custom_url"
+ },
+ "contact_info_ordering": {
+  "0": "phone_v2",
+  "1": "email_v2",
+  "2": "website_v2",
+  "3": "custom_fields"
+ },
+ "follow_up_email": false,
+ "follow_up_email_body": "<p>It was a pleasure meeting you.</p><p>Thank you for viewing <span class=\"fr-deletable fr-tribute\">@MyCardURL</span>&nbsp;and sharing your contact details with me.</p><p>Looking forward to staying connected!</p><p>Best,</p><p><span class=\"fr-deletable fr-tribute\">@MyFullName</span>&nbsp;</p>",
+ "follow_up_email_subject": "<span class=\"fr-deletable fr-tribute\">@ContactsFirstName</span>, <span class=\"fr-deletable fr-tribute\">@MyFirstName</span> says \"Hi! 👋\"",
+ "follow_up_email_delay": 1,
+ "azure_username": "",
+ "is_template": false,
+ "card_preview_url": "https://cdn.uniqode.com/189912/f2172ffcf6bd44f095e0461292ffcd61",
+ "threat_active": false,
+ "views": 44,
+ "saves": 1,
+ "created_via": null,
+ "default_language": null,
+ "preview_qr_code": "https://beaconstac-content.s3.us-east-1.amazonaws.com/189912/qr-codes/DBC193633/png/aHR0cHM6Ly9zbWFydGNhcmRzLnByby8wQUVseWc%3D-1024.png",
+ "spice_migration_completed": true,
+ "organization": 189912,
+ "custom_domain": null,
+ "card_template": 204,
+ "maintainer": 190500,
+ "tags": [],
+ "language_data": {},
+ "consent_placeholder": "Mark Roach"
+}

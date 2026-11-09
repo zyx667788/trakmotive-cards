@@ -1,0 +1,102 @@
+{
+	"type": "npm",
+	"name": "uniqode-card-templates",
+	"version": "1.1.4",
+	"default": "/dist/index.min.js",
+	"files": [
+		{
+			"name": "/dist/card-layout-1.js",
+			"hash": "JwgtCMwFhx33BSEqnrSj4CUAw6GvEUmGIzVs8ErdXp8=",
+			"size": 162506
+		},
+		{
+			"name": "/dist/card-layout-2.js",
+			"hash": "u60zLUA9jpvsm6Y5YRhe9E21V0G45v9UtdDn3/pughY=",
+			"size": 162359
+		},
+		{
+			"name": "/dist/card-layout-3.js",
+			"hash": "K1MfW3JNx4Zu4UTWmlNuh04FctpsuGBg2RMalP55OaU=",
+			"size": 159366
+		},
+		{
+			"name": "/dist/card-layout-4.js",
+			"hash": "44Z2OeBOm1Gj5v2OpZ5L+ylEmZ1q4CQjpPrbDz+NG80=",
+			"size": 165960
+		},
+		{
+			"name": "/dist/card-layout-5.js",
+			"hash": "+N2bnlPFSTVX5KmL3lDLle3+7zuLKEtIIdYobB3oOGI=",
+			"size": 162350
+		},
+		{
+			"name": "/dist/card-layout-6.js",
+			"hash": "aKFsAX5nh9aRH8tDPCce7+yUgrL972Pu93athCPTZmQ=",
+			"size": 160983
+		},
+		{
+			"name": "/dist/card-layout-7.js",
+			"hash": "ahXZY9Wk/KT7fcGnj4FpeiBgIMJd8JE8TpejUEn9tF8=",
+			"size": 163477
+		},
+		{
+			"name": "/dist/card-layout-8.js",
+			"hash": "NH8flNnHnS3jZEbI38eCDtWXxrU2bdPMLKxWdtWiRTk=",
+			"size": 160084
+		},
+		{
+			"name": "/dist/card-layout-9.js",
+			"hash": "93ijlPhOMaEoBayGToLJWoujE4/f02iCckXhyeGMT4I=",
+			"size": 160834
+		},
+		{
+			"name": "/dist/card-layout-11.js",
+			"hash": "LM5LRxWtMYG7A5MTRVefQSzzXn/H1YvUb4LuLbx7OMs=",
+			"size": 157987
+		},
+		{
+			"name": "/dist/card-layout-12.js",
+			"hash": "7xXByL99BM0wvq1rYIqBwjlTthP8ttjCgFO5uQhGPRU=",
+			"size": 179486
+		},
+		{
+			"name": "/dist/card-layout-13.js",
+			"hash": "8aslroeL0c9VOYcG3ygs1r8uRI1Cq0Oc9ccj1zArnh8=",
+			"size": 234854
+		},
+		{
+			"name": "/dist/index.d.ts",
+			"hash": "f5lczkbjdgwSGKOa8VHnAp06RXVjn2joaQcClgTAcBw=",
+			"size": 1171
+		},
+		{
+			"name": "/dist/index.js",
+			"hash": "cD1vk3EHBy2D86EkYvo/osED8eTK10VNRMxMqKlYwPw=",
+			"size": 532260
+		},
+		{
+			"name": "/dist/types/enums.ts",
+			"hash": "A6QLZF2sKkk/2PPFZg31QREmScqdwM8qno/9fMSrg1g=",
+			"size": 1534
+		},
+		{
+			"name": "/dist/types/index.d.ts",
+			"hash": "SWqpFXYYAkXSKn5maAG62dBB0qszoJrs5GMFWxfKVno=",
+			"size": 16523
+		},
+		{
+			"name": "/LICENSE",
+			"hash": "LB3zpGPY8ODG9jAjYtwQCKB877YM9MjhNL3X0FjwyMM=",
+			"size": 1069
+		},
+		{
+			"name": "/package.json",
+			"hash": "i4NHHwHO0TBIKJsOQd/2HWeKgjztyhcLw1IbtX6QdBk=",
+			"size": 2825
+		}
+	],
+	"links": {
+		"stats": "https://data.jsdelivr.com/v1/stats/packages/npm/uniqode-card-templates@1.1.4",
+		"entrypoints": "https://data.jsdelivr.com/v1/packages/npm/uniqode-card-templates@1.1.4/entrypoints"
+	}
+}

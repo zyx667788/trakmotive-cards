@@ -1,0 +1,19 @@
+{
+  "slug": "01",
+  "name": "Nora Zeng",
+  "title": "Global VP of Products, Distribution",
+  "company": "Advanced Innovative Technology Corp.",
+  "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+  "phone": "+1 (385) 428-9001",
+  "phone_label": "Mobile",
+  "email": "nora@trakmotive.com",
+  "website": "https://www.trakmotive.com",
+  "address": "1675 W Park Ave, Redlands, CA 92373, USA",
+  "address_map_url": "https://www.google.com/maps/search/?api=1&query=1675+W+Park+Ave,+Redlands,+CA+92373",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/company/advanced-innovative-technology-corp-/",
+    "facebook": "https://www.facebook.com/trakmotive/",
+    "instagram": "https://www.instagram.com/trakmotive/",
+    "youtube": "https://www.youtube.com/channel/UCC5_3tMd6339eafch0GLMSg"
+  }
+}

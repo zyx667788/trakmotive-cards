@@ -1,0 +1,20 @@
+{
+  "slug": "03",
+  "name": "Mark Roach",
+  "title": "Marketing Director",
+  "company": "Advanced Innovative Technology Corp.",
+  "avatar": "",
+  "initials": "MR",
+  "phone": "(440) 552-7002",
+  "phone_label": "Mobile",
+  "email": "mroach@trakmotive.com",
+  "website": "https://www.trakmotive.com",
+  "address": "1675 W Park Ave, Redlands, CA 92373, USA",
+  "address_map_url": "https://www.google.com/maps/search/?api=1&query=1675+W+Park+Ave,+Redlands,+CA+92373",
+  "socials": {
+    "linkedin": "https://www.linkedin.com/company/advanced-innovative-technology-corp-/",
+    "facebook": "https://www.facebook.com/trakmotive/",
+    "instagram": "https://www.instagram.com/trakmotive/",
+    "youtube": "https://www.youtube.com/channel/UCC5_3tMd6339eafch0GLMSg"
+  }
+}
