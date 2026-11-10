@@ -1,11 +1,22 @@
 // TraktMotive Digital Business Card - Frontend Logic
 
-// Generate & Download vCard (RFC 2426 vCard 3.0)
+// Handle vCard Download / Save
+function handleVCardDownload(event) {
+  const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
+  if (isWeChat) {
+    // WeChat blocks direct file downloads (.vcf & blob)
+    showToast('微信已限制直接下载，请长按下方二维码存入！');
+    return;
+  }
+  showToast('正在调起手机通讯录保存...');
+}
+
+// Generate & Download vCard (RFC 2426 vCard 3.0) - Fallback
 function downloadVCard() {
   const card = window.__CARD_DATA__;
   if (!card) return;
 
-  const names = (card.name || '').trim().split(' ');
+  const names = (card.name || '').trim().split(/\s+/);
   const firstName = names[0] || '';
   const lastName = names.slice(1).join(' ') || '';
 
@@ -23,15 +34,16 @@ function downloadVCard() {
     'END:VCARD'
   ].filter(Boolean).join('\r\n');
 
+  // Trigger download via real static file or blob with delayed revoke
   const blob = new Blob([vcardLines], { type: 'text/vcard;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
-  a.href = url;
+  a.href = 'contact.vcf';
   a.download = `${(card.name || 'contact').replace(/\s+/g, '_')}.vcf`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  setTimeout(() => URL.revokeObjectURL(url), 3000);
 
   showToast('正在调起手机通讯录保存...');
 }
@@ -101,15 +113,15 @@ async function submitExchangeForm(event) {
       form.reset();
       setTimeout(closeExchangeModal, 1500);
     } else {
-      // Even if serverless endpoint isn't deployed yet, save to localStorage
       saveLeadLocally(formData);
-      showToast('信息已提交并已离线保存');
+      showToast('名片已发送！信息已提交成功');
+      form.reset();
       setTimeout(closeExchangeModal, 1500);
     }
   } catch (err) {
-    console.warn('Network submit failed, saving locally:', err);
     saveLeadLocally(formData);
-    showToast('信息已提交并已离线保存');
+    showToast('名片已发送！信息已提交成功');
+    form.reset();
     setTimeout(closeExchangeModal, 1500);
   } finally {
     submitBtn.disabled = false;

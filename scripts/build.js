@@ -169,6 +169,35 @@ async function build() {
 
     fs.writeFileSync(path.join(cardDir, 'index.html'), html, 'utf-8');
 
+    // Generate static contact.vcf file
+    const names = (card.name || '').trim().split(/\s+/);
+    const firstName = names[0] || '';
+    const lastName = names.slice(1).join(' ') || '';
+    const vcardContent = [
+      'BEGIN:VCARD',
+      'VERSION:3.0',
+      `N:${lastName};${firstName};;;`,
+      `FN:${card.name || ''}`,
+      `ORG:${card.company || 'Advanced Innovative Technology Corp.'}`,
+      `TITLE:${card.title || ''}`,
+      card.phone ? `TEL;TYPE=CELL,VOICE:${card.phone}` : '',
+      card.email ? `EMAIL;TYPE=WORK,INTERNET:${card.email}` : '',
+      card.website ? `URL:${card.website}` : '',
+      card.address ? `ADR;TYPE=WORK:;;${card.address};;;;` : '',
+      'END:VCARD'
+    ].filter(Boolean).join('\r\n');
+
+    fs.writeFileSync(path.join(cardDir, 'contact.vcf'), vcardContent, 'utf-8');
+
+    // Generate vCard QR Code (for WeChat native long-press save)
+    const vcardQrSvg = await QRCode.toString(vcardContent, {
+      type: 'svg',
+      errorCorrectionLevel: 'M',
+      margin: 1,
+      color: { dark: '#000000', light: '#ffffff' }
+    });
+    fs.writeFileSync(path.join(cardDir, 'vcard-qr.svg'), vcardQrSvg, 'utf-8');
+
     // Generate Print-ready High-Resolution QR Code (Pure B&W SVG & PNG without logo)
     const targetUrl = `${BASE_URL}/c/${slug}/`;
     const qrSvgPath = path.join(DIST_DIR, 'qrcodes', `${slug}.svg`);

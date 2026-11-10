@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Gordon;Keith;;;
+FN:Keith Gordon
+ORG:Advanced Innovative Technology Corp.
+TITLE:Commercial Director - Canada
+TEL;TYPE=CELL,VOICE:(905) 552-7100
+EMAIL;TYPE=WORK,INTERNET:kgordon@trakmotive.com
+URL:https://www.trakmotive.com
+ADR;TYPE=WORK:;;5800 Explorer Dr, Mississauga, ON L4W 5K9, Canada;;;;
+END:VCARD

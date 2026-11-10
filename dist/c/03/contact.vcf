@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Roach;Mark;;;
+FN:Mark Roach
+ORG:Advanced Innovative Technology Corp.
+TITLE:Marketing Director
+TEL;TYPE=CELL,VOICE:(440) 552-7002
+EMAIL;TYPE=WORK,INTERNET:mroach@trakmotive.com
+URL:https://www.trakmotive.com
+ADR;TYPE=WORK:;;1675 W Park Ave, Redlands, CA 92373, USA;;;;
+END:VCARD
