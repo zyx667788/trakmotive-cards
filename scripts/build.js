@@ -80,7 +80,7 @@ async function build() {
           <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
         </a>` : '',
       (card.address_map_url || card.address) ? `
-        <a href="${card.address_map_url || `https://maps.google.com/?q=${encodeURIComponent(card.address)}`}" target="_blank" rel="noopener" class="quick-action-btn" title="导航位置">
+        <a href="${card.address_map_url || `https://cn.bing.com/maps?q=${encodeURIComponent(card.address)}`}" target="_blank" rel="noopener" class="quick-action-btn map-link" title="导航位置">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         </a>` : ''
     ].filter(Boolean).join('\n');
@@ -144,7 +144,7 @@ async function build() {
           </div>
         </a>` : '',
       card.address ? `
-        <a href="${card.address_map_url || `https://maps.google.com/?q=${encodeURIComponent(card.address)}`}" target="_blank" rel="noopener" class="detail-item">
+        <a href="${card.address_map_url || `https://cn.bing.com/maps?q=${encodeURIComponent(card.address)}`}" target="_blank" rel="noopener" class="detail-item map-link">
           <div class="detail-icon">
             <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
           </div>

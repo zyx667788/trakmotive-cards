@@ -134,3 +134,31 @@ window.addEventListener('click', (e) => {
     closeExchangeModal();
   }
 });
+
+// Smart Map Link Handler (Adapts for iPhone/iPad vs Android/PC without VPN)
+function initMapLinks() {
+  const card = window.__CARD_DATA__;
+  if (!card || !card.address) return;
+
+  const isIOS = /iPad|iPhone|iPod|Macintosh/i.test(navigator.userAgent) && !window.MSStream;
+  const encodedAddr = encodeURIComponent(card.address);
+  
+  // On iOS (iPhone/iPad), Apple Maps opens the native Maps App seamlessly in China
+  // On Android/Windows/PC, Bing Maps opens the full satellite/street map directly in China
+  const smartMapUrl = isIOS 
+    ? `https://maps.apple.com/?q=${encodedAddr}`
+    : `https://cn.bing.com/maps?q=${encodedAddr}`;
+
+  document.querySelectorAll('.map-link').forEach(el => {
+    el.href = smartMapUrl;
+    el.target = '_blank';
+    el.rel = 'noopener';
+  });
+}
+
+// Run on page load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMapLinks);
+} else {
+  initMapLinks();
+}
